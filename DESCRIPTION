@@ -1,4 +1,4 @@
-Package: NetCoMi
+Package: NetCoMiPosOnly
 Type: Package
 Title: Network Construction and Comparison for Microbiome Data
 Version: 1.1.0
