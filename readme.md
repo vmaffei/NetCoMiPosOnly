@@ -1,5 +1,5 @@
 
-# NetCoMi <img src="man/figures/NetCoMi_logo_800x400_300dpi.png" align="right" width="260" />
+# NetCoMi: fork from NetCoMi to add positive association only filter
 
 [![DOI](https://zenodo.org/badge/259906607.svg)](https://zenodo.org/badge/latestdoi/259906607)
 [![install with
