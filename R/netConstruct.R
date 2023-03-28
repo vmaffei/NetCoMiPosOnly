@@ -726,6 +726,7 @@ netConstruct <- function(data,
                          knnMutual = FALSE,
                          dissFunc = "signed",
                          dissFuncPar = NULL,
+                         posAssoOnly = TRUE,
                          simFunc = NULL,
                          simFuncPar = NULL,
                          scaleDiss = TRUE,
@@ -1561,6 +1562,8 @@ netConstruct <- function(data,
     assoMat1 <- .calcAssociation(countMat = counts1, measure = measure,
                                  measurePar = measurePar, verbose = verbose)
     
+    if(posAssoOnly){assoMat1[assoMat1<0] <- 0}
+
     if (verbose %in% 2:3) message("Done.")
     
     
@@ -1573,6 +1576,9 @@ netConstruct <- function(data,
       
       assoMat2 <- .calcAssociation(countMat = counts2, measure = measure,
                                    measurePar = measurePar, verbose = verbose)
+      
+	  if(posAssoOnly){assoMat1[assoMat1<0] <- 0}
+
       if (verbose %in% 2:3) message("Done.")
       
     } else {
